@@ -14,12 +14,18 @@ return {
         },
         lualine_c = {
           {
-            function()
-              -- invoke `progress` here.
-              return require('lsp-progress').progress()
-            end,
+            "harpoon2",
+            -- icon = '',
           }
         },
+        -- lualine_c = {
+        --   {
+        --     function()
+        --       -- invoke `progress` here.
+        --       return require('lsp-progress').progress()
+        --     end,
+        --   },
+        -- },
       }
     }
   },
