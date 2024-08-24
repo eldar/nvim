@@ -13,3 +13,4 @@ require("telescope").setup({
   }
 })
 
+-- require('mini.cursorword').setup()
