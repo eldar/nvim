@@ -16,16 +16,13 @@ return {
         lualine_c = {
           {
             '%=',
-            -- separator=nil,
             separator = { left = "", right = ""},
           },
           {
-            -- separator = { left = "", right = ""},
-            -- icon = nil,
             "harpoon2",
-            -- icon = '',
           }
         },
+        lualine_x = {'filetype'},
         -- lualine_c = {
         --   {
         --     function()
