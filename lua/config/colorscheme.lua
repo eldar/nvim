@@ -46,3 +46,61 @@ vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
 vim.g.gruvbox_material_better_performance = 1
 
 -- vim.cmd.colorscheme('gruvbox-material')
+
+require("themery").setup({
+  themes = {
+    {
+      name = "Everforest Dark",
+      colorscheme = "everforest",
+      before = [[
+        vim.g.everforest_background = "hard"
+        vim.opt.background = "dark"
+      ]],
+    },
+    {
+      name = "Gruvbox Material Dark",
+      colorscheme = "gruvbox-material",
+      before = [[
+        vim.g.gruvbox_material_background = "medium"
+        vim.opt.background = "dark"
+      ]],
+    },
+    {
+      name = "Catppuccin Mocha Dark",
+      colorscheme = "catppuccin",
+      before = [[
+        require("catppuccin").setup({
+            flavour = "mocha", -- latte, frappe, macchiato, mocha
+        })
+        vim.opt.background = "dark"
+      ]],
+    },
+    {
+      name = "Everforest Light",
+      colorscheme = "everforest",
+      before = [[
+        vim.g.everforest_background = "medium"
+        vim.opt.background = "light"
+      ]],
+    },
+    {
+      name = "Gruvbox Material Light",
+      colorscheme = "gruvbox-material",
+      before = [[
+        vim.g.gruvbox_material_background = "medium"
+        vim.opt.background = "light"
+      ]],
+    },
+    {
+      name = "Catppuccin Mocha Light",
+      colorscheme = "catppuccin",
+      before = [[
+        require("catppuccin").setup({
+            flavour = "mocha", -- latte, frappe, macchiato, mocha
+        })
+        vim.opt.background = "light"
+      ]],
+    },
+  },
+  livePreview = true, -- Apply theme while picking. Default to true.
+})
