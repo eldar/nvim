@@ -13,8 +13,8 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { '<Leader>ha', function() require('harpoon'):list():add() end, desc = 'Add Location' },
-      { '<Leader>hr', function() require('harpoon'):list():remove() end, desc = 'Remove Location' },
+      { '<Leader>qa', function() require('harpoon'):list():add() end, desc = 'Add Location' },
+      { '<Leader>qr', function() require('harpoon'):list():remove() end, desc = 'Remove Location' },
       { '<C-n>', function() require('harpoon'):list():next() end, desc = 'Next Location' },
       { '<C-p>', function() require('harpoon'):list():prev() end, desc = 'Previous Location' },
       { '<Leader>1', function() require('harpoon'):list():select(1) end, desc = 'Harpoon to File 1' },
@@ -23,7 +23,7 @@ return {
       { '<Leader>4', function() require('harpoon'):list():select(4) end, desc = 'Harpoon to File 4' },
       { '<Leader>5', function() require('harpoon'):list():select(5) end, desc = 'Harpoon to File 5' },
 
-      { '<Leader>hh', function()
+      { '<Leader>qq', function()
         local harpoon = require('harpoon')
         harpoon.ui:toggle_quick_menu(harpoon:list())
       end, desc = 'List locations' },
