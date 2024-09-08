@@ -27,7 +27,6 @@ nmap("<C-l>", "<C-w>l", opts)
 nmap("<leader>Tk", "<cmd>Telescope keymaps<cr>", { desc = "Keymaps" })
 nmap("<leader>ff", "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", { desc = "Find Files inc. hidden" })
 nmap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>", { desc = "buffers" })
-nmap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>", { desc = "ripgrep" })
 -- nmap("<leader>sg", "<cmd>lua require('telescope.builtin').live_grep({additional_args = {'--hidden'}})<cr>", { desc = "ripgrep inc. hidden" })
 nmap("<leader>cg", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", { desc = "current buffer fuzzy find" })
 
