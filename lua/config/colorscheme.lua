@@ -40,10 +40,10 @@ vim.api.nvim_create_autocmd('ColorScheme', {
 
 vim.cmd.colorscheme("everforest")
 
-vim.g.gruvbox_material_background = "medium"
-vim.g.gruvbox_material_diagnostic_text_highlight = 1
-vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
-vim.g.gruvbox_material_better_performance = 1
+-- vim.g.gruvbox_material_background = "medium"
+-- vim.g.gruvbox_material_diagnostic_text_highlight = 1
+-- vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
+-- vim.g.gruvbox_material_better_performance = 1
 
 -- vim.cmd.colorscheme('gruvbox-material')
 
@@ -57,24 +57,23 @@ require("themery").setup({
         vim.opt.background = "dark"
       ]],
     },
-    {
-      name = "Gruvbox Material Dark",
-      colorscheme = "gruvbox-material",
-      before = [[
-        vim.g.gruvbox_material_background = "medium"
-        vim.opt.background = "dark"
-      ]],
-    },
-    {
-      name = "Catppuccin Mocha Dark",
-      colorscheme = "catppuccin",
-      before = [[
-        require("catppuccin").setup({
-            flavour = "mocha", -- latte, frappe, macchiato, mocha
-        })
-        vim.opt.background = "dark"
-      ]],
-    },
+    -- {
+    --   name = "Gruvbox Material Dark",
+    --   colorscheme = "gruvbox-material",
+    --   before = [[
+    --     vim.g.gruvbox_material_background = "medium"
+    --     vim.opt.background = "dark"
+    --   ]],
+    -- },
+    -- {
+    --   name = "Catppuccin Mocha (Dark)",
+    --   colorscheme = "catppuccin",
+    --   before = [[
+    --     require("catppuccin").setup({
+    --         flavour = "mocha", -- latte, frappe, macchiato, mocha
+    --     })
+    --   ]],
+    -- },
     {
       name = "Everforest Light",
       colorscheme = "everforest",
@@ -83,24 +82,23 @@ require("themery").setup({
         vim.opt.background = "light"
       ]],
     },
-    {
-      name = "Gruvbox Material Light",
-      colorscheme = "gruvbox-material",
-      before = [[
-        vim.g.gruvbox_material_background = "medium"
-        vim.opt.background = "light"
-      ]],
-    },
-    {
-      name = "Catppuccin Mocha Light",
-      colorscheme = "catppuccin",
-      before = [[
-        require("catppuccin").setup({
-            flavour = "mocha", -- latte, frappe, macchiato, mocha
-        })
-        vim.opt.background = "light"
-      ]],
-    },
+    -- {
+    --   name = "Gruvbox Material Light",
+    --   colorscheme = "gruvbox-material",
+    --   before = [[
+    --     vim.g.gruvbox_material_background = "medium"
+    --     vim.opt.background = "light"
+    --   ]],
+    -- },
+    -- {
+    --   name = "Catppuccin Latte (Light)",
+    --   colorscheme = "catppuccin",
+    --   before = [[
+    --     require("catppuccin").setup({
+    --         flavour = "latte",
+    --     })
+    --   ]],
+    -- },
   },
   livePreview = true, -- Apply theme while picking. Default to true.
 })
