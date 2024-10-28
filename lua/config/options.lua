@@ -57,14 +57,14 @@ vim.opt.number = true
 vim.opt.mouse = "a"
 
 vim.cmd[[
-  filetype plugin on 
+  filetype plugin on
   filetype plugin indent on " allow auto-indenting depending on file type
   set clipboard=unnamedplus " using system clipboard
   set linebreak " break lines by words not characters
 ]]
 
 vim.wo.number = true
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 
 vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 
