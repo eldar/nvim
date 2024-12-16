@@ -13,7 +13,15 @@ return {
     enabled = true,
     cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
     opts = {
-      enhanced_diff_hl = true
+      enhanced_diff_hl = true,
+      keymaps = {
+        file_panel = {
+          ["q"] = "<Cmd>DiffviewClose<CR>",
+        },
+        view = {
+          ["q"] = "<Cmd>DiffviewClose<CR>",
+        },
+      },
     },
     keys = { { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "DiffView" } },
   },
