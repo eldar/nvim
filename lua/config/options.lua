@@ -80,3 +80,14 @@ vim.opt.fillchars = {
   vertleft = '│',
   verthoriz = '│',
 }
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank({
+      -- on_visual = false,
+      timeout = 750,
+    })
+  end,
+  group = vim.api.nvim_create_augroup('YankHighlight', { clear = true }),
+  pattern = '*',
+})
